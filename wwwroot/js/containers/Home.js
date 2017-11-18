@@ -136,7 +136,14 @@ class Main extends Component {
                 >
                     <Row className="show-grid">
                         <Col >
-                            <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
+                            <object classid="clsid:9BE31822-FDAD-461B-AD51-BE1D1C159921" codebase="http://download.videolan.org/pub/videolan/vlc/last/win32/axvlc.cab" id="vlc" name="vlc" class="vlcPlayer" events="True">
+                            <param name="Src" value="rtsp://192.168.100.5/live.sdp" />
+                            <param name="ShowDisplay" value="True" />
+                            <param name="AutoLoop" value="False" />
+                            <param name="AutoPlay" value="True" />
+                            <embed id="vlcEmb"  type="application/x-google-vlc-plugin"  autoplay="yes" loop="no" width="640" height="480"
+                            target="rtsp://192.168.100.5/live.sdp" ></embed>
+                            </OBJECT>
                         </Col>
                         <Col >
                             hali
